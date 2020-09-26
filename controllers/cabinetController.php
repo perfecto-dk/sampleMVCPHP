@@ -12,6 +12,16 @@ class CabinetController extends Controller {
 
     public function index() {
         $this->pageData['title'] = "Кабинет";
-        $this->View->render($this->pageTpl, $this->pageData);
+
+        $ordersCount = $this->model->getOrdersCount();
+        $this->pageData['ordersCount'] = $ordersCount;
+
+        $productsCount = $this->model->getProductsCount();
+        $this->pageData['productsCount'] = $productsCount;
+
+        $usersCount = $this->model->getUsersCount();
+        $this->pageData['usersCount'] = $usersCount;
+
+        $this->view->render($this->pageTpl, $this->pageData);
     }
 }

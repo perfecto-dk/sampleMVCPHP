@@ -178,7 +178,7 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <?php foreach($pageData['orders'] as $key=>$value) {
+                                     <!--   --><?php /*foreach($pageData['orders'] as $key=>$value) {
                                             echo "<tr data-ng-click='openOrderDetails(". $value['id'].")'>";
                                             echo "<td>" . $value['id']. "</td>";
                                             echo "<td>" . $value['total'] . "</td>";
@@ -186,7 +186,7 @@
                                             echo "<td>" . $value['email'] . "</td>";
                                             echo "</tr>";
                                         }
-                                        ?>
+                                        */?>
                                         </tbody>
                                     </table>
                                 </div>
